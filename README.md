@@ -2,14 +2,14 @@
 
 ## Task: Contextomized Quote Detection
 Let a given news article be *X:(H, B)*, where *H* is the news headline, and *B* is the body text. Our task is to predict a binary label *Y* indicating whether the headline quote in *H* is either modified or contextomized by referring to the body-text quotes.
-![problem](https://github.com/ssu-humane/data-centric-contextomized-quote-framework/assets/80903024/a91481da-e987-445b-8c52-7dbddd35c37a)
+![problem](https://github.com/ssu-humane/data-centric-contextomized-quote-framework/assets/80903024/75bbb382-87ea-4050-acc9-dc489567c35a)
 
 ## Method: QuoteCSE++
 
 We present QuoteCSE++, a data-centric contrastive learning framework. 
 
 This figure illustrates the QuoteCSE++ framework.
-![framework](https://github.com/ssu-humane/data-centric-contextomized-quote-framework/assets/80903024/7bcc501a-5803-41a2-8162-d86f908bad9d)
+![framework](https://github.com/ssu-humane/data-centric-contextomized-quote-framework/assets/80903024/0a926133-0151-4246-bf34-1eb785fcf9f3)
 
 We proposed the BERT-like transformer encoder to represent the semantics of news quotes. In addition, we implemented a classifier to classify whether the headline quote *H* is contextomized or not using embedding obtained by QuoteCSE++. 
 QuoteCSE++ is designed based on journalism ethics to learn effective quote representations. QuoteCSE++ maximizes the semantic similarity between the headline quote and the matched quote in the body text while minimizing the similarity for other unmatched quotes in the same or other articles.
