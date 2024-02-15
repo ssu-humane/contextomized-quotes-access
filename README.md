@@ -43,8 +43,8 @@ We introduce a dataset of 3,000 news articles for detecting contextomized news q
 **Examples**
 |title quote|body quotes|label|
 |------|---|:---:|
-|"이대론 그리스처럼 파탄"(A debt crisis, like Greece, is on the horizon)|건강할 때 재정을 지키지 못하면 그리스처럼 될 수도 있다"(If we do not maintain our fiscal health, we may end up like Greece) <br/> "강력한 ‘지출 구조조정’을 통해 허투루 쓰이는 예산을 아껴 필요한 곳에 투입해야 한다"(Wasted budgets should be reallocated to areas in need through the reconstruction of public expenditure)|Contextomized <br/> (1)|
-|"불필요한 모임 일절 자제"(Avoid unnecessary gatherings altogether)|"저도 백신을 맞고 해서 여름에 어디 여행이라도 한번 갈 계획을 했었는데..."(Since being vaccinated, I had planned to travel somewhere in the summer, but...) <br/> "어떤 행위는 금지하고 어떤 행위는 허용한다는 개념이 아니라 불필요한 모임과 약속, 외출을 일제 자제하고…."(It is not a matter of prohibiting or permitting specific activities, but of avoiding unnecessary gatherings, appointments, and going out altogether...)|Modified <br/> (0)|
+|"빨간옷 고집 마라"(Don't insist on wearing Red clothes)|"이번 주말부터는 시민 속으로 좀 더 파고들기 위해 빨간색에 구애받지 말고 자율적으로 복장을 하도록 했다"(Starting this weekend, we decided not to wear red clothes mandatory to encourage more citizens to join us) <br/> "집회 참가자들의 복장이 빨간색 일색이다보니 너무 튄다는 지적이 있었고 일부 시민들이 반감을 나타내는 경우도 있었다"(Since the rally participants' costumes were all red, some citizens criticized it as being too conspicuous and expressed their displeasure)|Contextomized <br/> (1)|
+|"AI 두려워할 필요 없어"(Don't need to fear AI)|"우리는 인공지능을 두려워할 필요가 없다"(We don't need to fear artificial intelligence) <br/> "오히려 우리는 인공지능이 세상에 가져다줄 놀랄 만큼 많은 이점을 기대해야 한다"(Instead, we should look forward to the numerous remarkable benefits that artificial intellignece will bring to the world)|Modified <br/> (0)|
 
 
 ## Usage
