@@ -9,7 +9,7 @@ Let a given news article be *X:(H, B)*, where *H* is the news headline, and *B* 
 We present QuoteCSE++, a data-centric contrastive learning framework. 
 
 This figure illustrates the QuoteCSE++ framework.
-![framework](https://github.com/ssu-humane/data-centric-contextomized-quote-framework/assets/80903024/81a4f864-e530-4761-982c-8a7223564d87)
+![framework](https://github.com/ssu-humane/data-centric-contextomized-quote-framework/assets/80903024/03c17a64-94ef-4ce7-b07a-40d3ac0bbf00)
 
 We proposed the BERT-like transformer encoder to represent the semantics of news quotes. In addition, we implemented a classifier to classify whether the headline quote *H* is contextomized or not using embedding obtained by QuoteCSE++. 
 QuoteCSE++ is designed based on journalism ethics to learn effective quote representations. QuoteCSE++ maximizes the semantic similarity between the headline quote and the matched quote in the body text while minimizing the similarity for other unmatched quotes in the same or other articles.
