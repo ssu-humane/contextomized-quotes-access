@@ -50,13 +50,13 @@ We introduce a dataset of 3,000 news articles for detecting contextomized news q
 
 ## Usage
 
-### QuoteCSE pretraining
+### QuoteCSE++ pretraining
 ```python
 python train.py 
 ```
 You can obtain the pretrained QuoteCSE checkpoints [here](https://drive.google.com/drive/folders/1XL34nX27vYDiJUZyhHaWqlD8cno672mH?usp=sharing).
 
-### QuoteCSE-based detection
+### QuoteCSE++-based detection
 ```python
 python contextomized_quote_detection.py 
 ```
