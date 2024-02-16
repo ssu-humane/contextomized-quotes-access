@@ -21,7 +21,7 @@ from imblearn.over_sampling import RandomOverSampler
 from sklearn.metrics import f1_score, accuracy_score, roc_auc_score, recall_score, precision_score
 from transformers import AdamW, get_cosine_schedule_with_warmup
 from transformers import AutoModel, AutoTokenizer
-
+from datasets import load_dataset
 
 def main():
     parser = argparse.ArgumentParser()
@@ -42,8 +42,6 @@ def main():
     parser.add_argument("--schedule", default=True, type=bool, help="whether to use the scheduler or not")    
     parser.add_argument("--mode", default="infer", type=str, help="infer mode") 
     parser.add_argument("--criterion", default=0.0512, type=float, help="criterion")   
-    
-    parser.add_argument("--DATA_DIR", default='./data/contextomized_quote.pkl', type=str, help="data to detect contextomized quote") 
     parser.add_argument("--MODEL_DIR", default='./model/best_checkpoint.pt', type=str, help="pretrained QuoteCSE model") 
     
     args = parser.parse_args()
@@ -60,8 +58,9 @@ def main():
     
     args.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     args.batch_size = args.batch_size * torch.cuda.device_count()
-    
-    df = pd.read_pickle(args.DATA_DIR)
+
+    dataset = load_dataset("humane-lab/contextomized-quote")['train']
+    df = pd.DataFrame(dataset)
     
     df_train, df_test = train_test_split(df, test_size=0.2, random_state=args.split_seed, stratify=df['label'])
     df_train, df_valid = train_test_split(df_train, test_size=0.125, random_state=args.split_seed, stratify=df_train['label'])
