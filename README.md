@@ -42,7 +42,7 @@ We introduce a dataset of 3,000 news articles for detecting contextomized news q
 - Label 0: The headline quote is *modified*. It keeps the semantics of original expression but it is a different phrase or sentence.
 
 **Examples**
-|title quote|body quotes|label|
+|headline quote|body quotes|label|
 |------|---|:---:|
 |"빨간옷 고집 마라"(Don't insist on wearing Red clothes)|"이번 주말부터는 시민 속으로 좀 더 파고들기 위해 빨간색에 구애받지 말고 자율적으로 복장을 하도록 했다"(Starting this weekend, we decided not to wear red clothes mandatory to encourage more citizens to join us) <br/> "집회 참가자들의 복장이 빨간색 일색이다보니 너무 튄다는 지적이 있었고 일부 시민들이 반감을 나타내는 경우도 있었다"(Since the rally participants' costumes were all red, some citizens criticized it as being too conspicuous and expressed their displeasure)|Contextomized <br/> (1)|
 |"AI 두려워할 필요 없어"(Don't need to fear AI)|"우리는 인공지능을 두려워할 필요가 없다"(We don't need to fear artificial intelligence) <br/> "오히려 우리는 인공지능이 세상에 가져다줄 놀랄 만큼 많은 이점을 기대해야 한다"(Instead, we should look forward to the numerous remarkable benefits that artificial intellignece will bring to the world)|Modified <br/> (0)|
